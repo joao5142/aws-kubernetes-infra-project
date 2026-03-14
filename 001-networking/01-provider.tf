@@ -6,9 +6,9 @@ terraform {
     }
   }
   backend "s3" {
-    bucket = "remote-backend-bucket-joaop"
-    key    = "networking/terraform.tfstate"
-    region = "us-east-1"
+    bucket         = "remote-backend-bucket-joaop"
+    key            = "networking/terraform.tfstate"
+    region         = "us-east-1"
     dynamodb_table = "dynamodb-state-locking-table"
   }
 }
