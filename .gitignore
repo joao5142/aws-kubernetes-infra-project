@@ -1,0 +1,55 @@
+# Diretórios e arquivos gerados pelo Terraform
+**/.terraform/
+*.tfstate
+*.tfstate.*
+
+# Informações de locking de estado
+.terraform.lock.hcl
+.terraform.tfstate.lock.info
+
+# Logs de erro
+crash.log
+crash.*.log
+
+# Arquivos sensíveis
+*.tfvars
+*.tfvars.json
+
+# Overrides locais
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Configurações locais do Terraform CLI
+.terraformrc
+terraform.rc
+
+# Arquivos de backend gerados
+backend.hcl
+
+# Terragrunt
+.terragrunt-cache/
+_backend.tf
+
+# IDEs e editores
+.idea/
+.vscode/
+
+# Arquivos temporários e de build
+*.mdc
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Logs genéricos
+*.log
+
+# Arquivos de build gerados por Makefile
+*.tfvars.generated
+*.auto.tfvars
+*.auto.tfvars.json
+
+#
+*.pem
