@@ -14,7 +14,7 @@ resource "aws_iam_role" "github" {
         }
         Condition = {
           StringLike = {
-            "token.actions.githubusercontent.com:sub" : "repo:joao5142/aws-kubernetes-infra-project"
+            "token.actions.githubusercontent.com:sub" : "repo:joao5142/aws-kubernetes-infra-project:*"
           }
           StringEquals = {
             "token.actions.githubusercontent.com:aud" : "sts.amazonaws.com"
