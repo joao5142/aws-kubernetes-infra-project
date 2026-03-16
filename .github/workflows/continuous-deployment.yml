@@ -9,6 +9,10 @@ env:
     BACKEND2_REPOSITORY: 004-apps/backend2
     IMAGE_TAG: ${{ github.sha }}
 
+permissions:
+    id-token: write
+    contents: read
+
 jobs:
     backend:
         name: Deploy backend
