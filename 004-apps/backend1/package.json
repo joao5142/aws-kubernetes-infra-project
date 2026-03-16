@@ -1,0 +1,12 @@
+{
+  "name": "backend1",
+  "version": "1.0.0",
+  "description": "Serviço HTTP backend1",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
