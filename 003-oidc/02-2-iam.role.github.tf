@@ -14,7 +14,7 @@ resource "aws_iam_role" "github" {
         }
         Condition = {
           StringLike = {
-            "token.actions.githubusercontent.com:sub" : "repo:"
+            "token.actions.githubusercontent.com:sub" : "repo:joao5142/aws-kubernetes-infra-project"
           }
           StringEquals = {
             "token.actions.githubusercontent.com:aud" : "sts.amazonaws.com"
@@ -42,7 +42,11 @@ resource "aws_iam_policy" "github" {
         Action = [
           "ecr:BatchGetImage",
           "ecr:BatchCheckLayerAvailability",
+          "ecr:CompleteLayerUpload",
           "ecr:GetDownloadUrlForLayer",
+          "ecr:InitiateLayerUpload",
+          "ecr:PutImage",
+          "ecr:UploadLayerPart"
         ]
         Effect = "Allow"
         Resource = [
