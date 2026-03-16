@@ -1,0 +1,4 @@
+assume_role = {
+  arn    = "arn:aws:iam::SUA_CONTA_ID:role/SUA_ROLE_TERRAFORM"
+  region = "us-east-1"
+}
